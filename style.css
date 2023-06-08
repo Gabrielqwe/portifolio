@@ -279,3 +279,39 @@ main .sobre{
         transform: translate3d(0 ,0 ,0);
     }
 }
+
+
+/* responsivo*/
+
+
+@media(max-width: 992px){
+
+    .section-div img {
+        display: none;
+    }
+    .section-div{
+        background-image: url(../img/photo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header{
+        
+    }
+    }
+
+
+
+
+
+@media(max-width:992px){
+    .sobre_img{
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+    .sobre_conteudo{
+        grid-column: 1/-1;
+
+    }
+}
+
