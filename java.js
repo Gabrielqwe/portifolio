@@ -1,4 +1,5 @@
 function escrevendoletra(){
+
    function ativarletra(elemento) {
     const arrTexto = elemento.innerHTML.split('');
     elemento.innerHTML = '';
@@ -7,10 +8,11 @@ function escrevendoletra(){
             elemento.innerHTML += letra;
         },75 * i);
     });
+    const titulo = document.querySelector('.digitando');
+ativarletra(titulo);
+
 }
 
-const titulo = document.querySelector('.digitando');
-ativarletra(titulo);
 
 
 }
