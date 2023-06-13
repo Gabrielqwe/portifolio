@@ -759,3 +759,44 @@ main .sobre{
     grid-column: 1/-1;
 }
 }
+.projects{
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    background-color: #151515;
+}
+
+.projects ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects_models ul li{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 6px 20px;
+    color: #707070;
+}
+.projects_armazenamento ul {
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.projects_armazenamento ul li.active{
+    display: block;
+    animation: animationImageButtom 2s ease-in-out forwards;
+}
+
+.projects_armazenamento ul li  img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
