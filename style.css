@@ -622,7 +622,7 @@ main .sobre{
 }
 
 .my_skill h2 i {
-    padding-right: 100px;
+    padding-right: 10px;
 }
 
 .skill_content{
@@ -733,6 +733,8 @@ main .sobre{
     justify-self: center;
     
 }
+
+
 .cursos {
     grid-template-columns: 1fr;
 }
