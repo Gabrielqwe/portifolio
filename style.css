@@ -445,6 +445,82 @@ main .sobre{
 
 
 .my_resume{
-    color: white;
+    color: #ffff;
+}
+.resume_generico{
     padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+
+}
+    
+.resume_generico h2 {
+    font-family: 'poppins';
+    font-size: 2.5rem;
+    background-color: #ff5d56;
+    justify-self: start;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.resume_generico h2 i {
+    margin-right: 10px;
+}
+
+.education{
+    margin-bottom: 30px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.education{
+    margin-bottom: 30px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.experience_content ul{
+    color: #ff5d56;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+}
+.resume_generico .experience_content div{
+    background-color: #222;
+    padding: 40px;
+    position: relative;
+
+}
+.resume_generico .experience_content div::before{
+    content: '';
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    display: inline-block;
+
+}
+
+.resume_generico .experience_content div span{
+    color: #dc3545;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.resume_generico .experience_content div h3{
+    font-family: 'poppins';
+    margin:  10px 0px ;
+    
+}
+
+.resume_generico .experience_content div p {
+    color: #707070;
+    font-size: 1.1rem;
+    
 }
