@@ -759,6 +759,8 @@ main .sobre{
     grid-column: 1/-1;
 }
 }
+
+/* PROJETOS*/
 .projects{
     padding: 30px;
     display: grid;
@@ -799,4 +801,13 @@ main .sobre{
     height: 100%;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.projects a {
+    background-color: #222;
+    text-decoration:none ;
+    justify-self: center;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    color: #707070;
 }
