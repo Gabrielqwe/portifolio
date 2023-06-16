@@ -828,6 +828,13 @@ main .sobre{
     color: #707070;
 }
 
+#link:hover{
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        background-color: #707070
+    }
+
+
 .projects_models li,
 .projects_storage li {
   animation: active 2s ease-in-out forwards;
@@ -883,8 +890,8 @@ main .sobre{
 
 .footer_sociais::before{
     content: '';
-    height: 5px;
-    width: 200px;
+    height: 1px;
+    width: 350px;
     background-color: red;
     position: absolute;
     bottom: -30px;
