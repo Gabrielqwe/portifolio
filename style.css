@@ -28,7 +28,7 @@ header{
 }
 header h1{
     color: red;
-    font-size: 2.5;
+    font-size: 2.5rem;
 
 }
 header span{
@@ -763,6 +763,7 @@ main .sobre{
 }
 
 /* PROJETOS*/
+
 .projects{
     padding: 30px;
     display: grid;
@@ -771,7 +772,7 @@ main .sobre{
     background-color: #151515;
 }
 
-.projects ul{
+.projects ul {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -784,9 +785,15 @@ main .sobre{
     border: 1px solid #333;
     padding: 6px 20px;
     color: #707070;
-    
 }
-.projects_armazenamento ul {
+
+.projects_models ul li.active {
+    background-color: #dc3545;
+    color: #151515;
+    font-weight: bold;
+}
+
+.projects_storage ul {
     display: grid;
     margin-top: 60px;
     gap: 20px;
@@ -794,23 +801,99 @@ main .sobre{
     grid-template-columns: repeat(4, 1fr);
 }
 
-.projects_armazenamento ul li.active{
-    display: block;
-    animation: animationImageButtom 2s ease-in-out forwards;
+.projects_storage ul li{
+    display: none;
+    max-width: 100%;
+    height: 200px;
 }
 
-.projects_armazenamento ul li  img{
+.projects_storage ul li.active{
+    
+    display: block;
+    animation: active 2s ease-in-out forwards;
+}
+
+.projects_storage ul li  img{       
     max-width: 100%;
     height: 100%;
     border-radius: 4px;
-    cursor: pointer;
 }
 
-.projects a {
+#link {
     background-color: #222;
-    text-decoration:none ;
+    text-decoration: none;
     justify-self: center;
     padding: 20px 40px;
     border: 1px solid #333;
     color: #707070;
+}
+
+.projects_models li,
+.projects_storage li {
+  animation: active 2s ease-in-out forwards;
+}
+
+
+@keyframes active {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* rede sociais*/
+
+.footer{
+    background-color: #000000;
+    padding: 30px;
+}
+.footer_sociais{
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    position: relative;
+}
+
+.footer_sociais li{
+    background-color: #212020;
+    border-radius: 50%;
+    border: 1px solid #333;
+
+}
+.footer_sociais li i {
+    padding: 30px;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+}
+
+.footer_sociais li:hover{
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    background-color: #c71313;
+}
+
+.footer_sociais::before{
+    content: '';
+    height: 5px;
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    bottom: -30px;
+}
+
+footer .footer_comercial{
+    text-align: center;
+    color: #ffff;
+    margin: 90px auto;
+    font-size: 1.5rem;
+    font-family: 'poppins';
 }
