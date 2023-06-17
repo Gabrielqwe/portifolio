@@ -5,7 +5,7 @@ function writeTitle(){
         arrText.forEach((letra, i) =>{
             setTimeout(()=>{
                 element.innerHTML += letra;
-            }, 80 * i);
+            }, 75 * i);
         })
     }
     const title = document.querySelector('.digitando');
@@ -18,7 +18,7 @@ writeTitle();
 
 function menuMobile(){
     const activeMenu = document.querySelector('.fa-bars');
-    const navMenu = document.querySelector('header .navegacao-primaria');
+    const navMenu = document.querySelector('header .navegação-primaria');
     
     
     activeMenu.addEventListener('click',()=>{
